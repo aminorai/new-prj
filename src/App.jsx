@@ -3,6 +3,8 @@ import { useState } from 'react'
 import Todo from './Components/Todo'
 // import InputTask from './Components/InputTask'
 import Mat from './Components/Mat'
+import Formlist from './Components/Formlist'
+
 
 
 
@@ -11,7 +13,8 @@ function App() {
 
   return (
     <>
-    <Mat></Mat>
+    {/* <Mat></Mat> */}
+   <Formlist></Formlist>
 
     </>
   )

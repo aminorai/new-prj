@@ -4,6 +4,8 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Alert from '@mui/material/Alert';
 
+
+
 const Mat = () => {
   const [name, setName] = useState('');
   const [age, setAge] = useState('');
@@ -37,12 +39,16 @@ const Mat = () => {
         <Button  type="submit" variant="contained" style={{ marginTop: '5px',marginLeft:'40px',borderRadius:'50px' }}>
           Show
         </Button>
+       
       </form>
+      
+     
       {showMessage && (
         <Box style={{ width: '100%', marginTop: '25px',padding:'30px',backgroundColor:'green'}}>
           <Alert severity="success"><p style={{fontWeight:'bold'}}>{name}</p>   thanks for complete !</Alert>
         </Box>
       )}
+   
     </div>
   );
 };
